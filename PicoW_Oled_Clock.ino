@@ -12,8 +12,8 @@
 #include <WiFi.h>
 
 // WiFi credentials.
-const char* WIFI_SSID = "E426867F5D3B-2G";
-const char* WIFI_PASS = "gapf8fcpgfd2e8";
+const char* WIFI_SSID = "";
+const char* WIFI_PASS = "";
 
 void wifi_connect() {
 	//Connect WiFi
@@ -54,8 +54,6 @@ time_t get_Ntp_Time() {
   
   return now;
 }
-
-
 
 
 // RTC

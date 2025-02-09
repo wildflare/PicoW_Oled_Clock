@@ -212,7 +212,7 @@ void loop() {
   datetime_to_hhmmr(datetime, hhmm);
   
   if(strncmp(&datetime[8], UPDATE_TIME, 4) ==0) {
-    if(difftime(currenttime, UpdateTimer) > UPDATE_TIMER) {
+    if(difftime(currenttime, UpdateTimer) != UPDATE_TIMER) {
       ntp_synchro();
       UpdateTimer = currenttime;
     }
